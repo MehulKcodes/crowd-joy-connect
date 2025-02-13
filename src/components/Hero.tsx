@@ -4,10 +4,19 @@ import { PartyPopper, ArrowRight } from "lucide-react";
 export const Hero = () => {
   return (
     <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary/5 to-secondary/5">
-      <div className="absolute inset-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81')] bg-cover bg-center opacity-10" />
+      {/* Multiple layered backgrounds for depth */}
+      <div className="absolute inset-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81')] bg-cover bg-center opacity-20 scale-105 transform transition-transform duration-1000" 
+        style={{
+          filter: "saturate(1.2) contrast(1.1)",
+          backgroundBlendMode: "overlay",
+        }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-transparent to-black/20 mix-blend-overlay" />
+      <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-accent/10 mix-blend-multiply" />
+      
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto animate-fade-up">
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6 animate-float">
+          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6 animate-float backdrop-blur-sm">
             <PartyPopper size={20} />
             <span className="text-sm font-medium">Welcome to the Party Hub</span>
           </div>
