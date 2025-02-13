@@ -20,7 +20,7 @@ export const Hero = () => {
             <PartyPopper size={20} />
             <span className="text-sm font-medium">Welcome to the Party Hub</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
+          <h1 className="font-display text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
             Your Ultimate Party Hub – Find, Host, and Connect
           </h1>
           <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
