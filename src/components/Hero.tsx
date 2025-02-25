@@ -1,5 +1,6 @@
 
 import { PartyPopper, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
@@ -31,9 +32,12 @@ export const Hero = () => {
               Get Started
               <ArrowRight size={20} />
             </button>
-            <button className="px-8 py-4 bg-white hover:bg-gray-50 text-primary border-2 border-primary rounded-full font-medium transition-all transform hover:scale-105">
+            <Link 
+              to="/create-event"
+              className="px-8 py-4 bg-white hover:bg-gray-50 text-primary border-2 border-primary rounded-full font-medium transition-all transform hover:scale-105"
+            >
               Host an Event
-            </button>
+            </Link>
           </div>
         </div>
       </div>
